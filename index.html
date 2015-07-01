@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style type="text/css">
+footer, header, section, aside {
+display: block
+}
+#wrapper {
+    
+}
+header {
+ padding: 20px 0;
+}
+aside {
+    float: left;
+    width: 250px;
+}
+section {
+    margin-left: 280px;
+    padding-bottom: 50px;
+}
+#title{
+    display:table;
+    float: left;
+    height: 200px;
+   
+}
+header>img {
+    float: left;
+}
+#title>div{
+    display:table-cell;
+    vertical-align: middle;
+}
+.clearFix{
+    clear:both;
+}
+aside{
+    width: 200px;
+    float: left;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul>li{
+    text-align: left;
+}
+section{
+    width: 80%;
+}
+section>div{
+    padding: 25px 50px;
+}
+.block1>div{
+     display: table;
+     float: left;
+     margin: 25px 25px 0 0;
+
+}
+.square1{
+    outline: 1px solid black;
+    width: 250px;
+    height: 150px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.block2>div{
+    width: 30%;
+    margin-right: 3%;
+    float: left;
+    display: table;
+}
+.square2{
+    outline: 1px solid black;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+    height: 150px;
+}
+</style>
+
+ 
+</head>
+<body>
+    <header>
+            <img src="http://design.ubuntu.com/wp-content/uploads/ubuntu-logo32.png" alt="logo">
+                <div id="title">
+                    <div>SOME TEXT VERTICALLY ALIGNED</div>
+                </div>
+    </header>
+    <div class="clearFix"></div>
+    <div id="wrapper">
+        <aside>
+            <ul>
+                <li>LEFT ALIGN TEXT</li>
+                <li>LEFT ALIGN TEXT</li>
+                <li>LEFT ALIGN TEXT</li>
+                <li>LEFT ALIGN TEXT</li>
+                <li>LEFT ALIGN TEXT</li>
+
+            </ul>
+        </aside>
+        <section>
+            <div class="block1">
+                    <div>
+                        <div class="square1">CENTERED DATA</div>
+                    </div>
+                    <div>
+                        <div class="square1">CENTERED DATA</div>
+                    </div>
+                   <div>
+                        <div class="square1">CENTERED DATA</div>
+                    </div>
+                    <div>
+                        <div class="square1">CENTERED DATA</div>
+                    </div>
+                    <div>
+                        <div class="square1">CENTERED DATA</div>
+                    </div>
+                    <div>
+                        <div class="square1">CENTERED DATA</div>
+                    </div>
+             </div>
+             <div class="clearFix"></div>
+            <div class="block2">
+                    <div>
+                        <div class="square2">CENTERED DATA</div>
+                    </div>
+                    <div>
+                        <div class="square2">CENTERED DATA</div>
+                    </div>
+                   <div>
+                        <div class="square2">CENTERED DATA</div>
+                    </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer></footer>
+</body>
+</html>
