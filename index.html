@@ -8,7 +8,6 @@
 footer, header, section, aside {
 display: block
 }
-
 header {
  padding: 20px 0;
 }
@@ -23,10 +22,12 @@ section {
 #title{
     display:table;
     float: left;
-    height: 200px;
+    height: 50px;
    
 }
 header>img {
+    width:50px;
+    height:auto;
     float: left;
 }
 #title>div{
@@ -47,18 +48,19 @@ ul{
 }
 ul>li{
     text-align: left;
+    outline: 1px solid black;
 }
 section{
-    width: 80%;
+    width: 70%;
+    padding: 0 50px;
 }
-section>div{
-    padding: 25px 50px;
+.block1{
+    padding: 0 50px;
 }
 .block1>div{
      display: table;
      float: left;
      margin: 25px 25px 0 0;
-
 }
 .square1{
     outline: 1px solid black;
@@ -67,6 +69,10 @@ section>div{
     text-align: center;
     display: table-cell;
     vertical-align: middle;
+    position:relative;
+}
+.block2{
+    margin-top: 25px;
 }
 .block2>div{
     width: 30%;
@@ -82,16 +88,18 @@ section>div{
     height: 150px;
 }
 footer {
-	
 	margin: auto;
 	height: 90px;
 }
+#foot1{
+    margin:25px auto;
+}
 #foot1>div{
-    height: 40px;
+    height:150px;
     float: left;
-    width: 30%;
-    margin-right: 3%;
+    width: 33.33%;
     display:table;
+    outline: 1px solid black;
 }
 .foot1block{
     display: table-cell;
@@ -101,13 +109,26 @@ footer {
 #foot2{
     display: table;
     width: 100%;
-
 }
 #foot2>div{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    outline: 1px solid black;
 }
+.ribbon {
+      background-color: black;
+
+    position: absolute;
+    right: -16px;
+    top: 38px;
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+
+    padding: 0.1em 3.5em;
+
+}
+
 </style>
 
  
@@ -140,7 +161,7 @@ footer {
                         <div class="square1">CENTERED DATA</div>
                     </div>
                    <div>
-                        <div class="square1">CENTERED DATA</div>
+                        <div class="square1">CENTERED DATA<div class="ribbon"></div></div>
                     </div>
                     <div>
                         <div class="square1">CENTERED DATA</div>
